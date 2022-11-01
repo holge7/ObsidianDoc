@@ -1,0 +1,152 @@
+{
+  "main": {
+    "id": "5915c5fe36b0c0a3",
+    "type": "split",
+    "children": [
+      {
+        "id": "1dba49127932808a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "685b3045a98a8a05",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Spring/Api Gateway 🚪.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ca2e149c92edb36a",
+    "type": "split",
+    "children": [
+      {
+        "id": "c44475b94208ebf9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "29ff01e3be1e6dc4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f1d5116142b9447e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "dab866a70a1e468d",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9f4fbe6e7966f486",
+    "type": "split",
+    "children": [
+      {
+        "id": "7e734b67f4069c84",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "64a32dd0f928ec91",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Spring/Api Gateway 🚪.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a4a8648088039594",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Spring/Api Gateway 🚪.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b6f323511d5e0301",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "62dfb7c5f4a8ba64",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Spring/Api Gateway 🚪.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "29ff01e3be1e6dc4",
+  "lastOpenFiles": [
+    "How to add a new.md",
+    "Spring/Api Gateway 🚪.md",
+    "Spring/Service Discovery 🔍.md",
+    "Spring/Inter Service Communication 🖇.md",
+    "media/Pasted image 20221101171241.png",
+    "Spring/Spring with JPA 💾.md",
+    "media/Pasted image 20221101170948.png",
+    "media/Pasted image 20221101152245.png",
+    "media/Pasted image 20221101151536.png",
+    "media/Pasted image 20221101151900.png"
+  ]
+}
