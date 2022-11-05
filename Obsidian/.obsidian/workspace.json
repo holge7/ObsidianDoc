@@ -18,8 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "e89a1bf7fd129ec6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Spring/Auth 🔒.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ba0916421c5d6a0a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Spring/Auth 🔒.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring/Api Gateway 🚪.md",
+                "file": "Spring/Auth 🔒.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring/Api Gateway 🚪.md",
+                "file": "Spring/Auth 🔒.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring/Api Gateway 🚪.md"
+                "file": "Spring/Auth 🔒.md"
               }
             }
           }
@@ -136,17 +161,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "29ff01e3be1e6dc4",
+  "active": "ba0916421c5d6a0a",
   "lastOpenFiles": [
-    "How to add a new.md",
-    "Spring/Api Gateway 🚪.md",
+    "Spring/Exception Handler 📢.md",
+    "Sync and Async Communication 📡.md",
+    "Spring/Model Mapper 📋.md",
+    "Spring/Auth 🔒.md",
     "Spring/Service Discovery 🔍.md",
     "Spring/Inter Service Communication 🖇.md",
-    "media/Pasted image 20221101171241.png",
-    "Spring/Spring with JPA 💾.md",
-    "media/Pasted image 20221101170948.png",
-    "media/Pasted image 20221101152245.png",
-    "media/Pasted image 20221101151536.png",
-    "media/Pasted image 20221101151900.png"
+    "media/Pasted image 20221104223043.png",
+    "Spring/Api Gateway 🚪.md",
+    "How to add a new.md",
+    "media/Pasted image 20221101171241.png"
   ]
 }

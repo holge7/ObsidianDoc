@@ -58,8 +58,23 @@ spring.cloud.gateway.routes[1].predicates[0]=Path=/api/order
 
 ## Inventory Service Route
 spring.cloud.gateway.routes[2].id=inventory-service
-spring.cloud.gateway.routes[2].uri=lb://inventory-service
+spring.cloud.gateway.routes[2].uri=http://inventory-service
 spring.cloud.gateway.routes[2].predicates[0]=Path=/api/inventory
+
+
+## Discovery Server Route
+spring.cloud.gateway.routes[3].id=discovery-server
+spring.cloud.gateway.routes[3].uri=http://localhost:8761
+spring.cloud.gateway.routes[3].predicates[0]=Path=/eureka/web
+spring.cloud.gateway.routes[3].filters[0]=SetPath=/
+# the last line is to can access to eureka server since  
+# http://localhost:8080/eureka/web
+
+
+## Discover Server Static Resources Route (This is to get resources from eureka like css ## or js)
+spring.cloud.gateway.routes[4].id=discovery-server-static
+spring.cloud.gateway.routes[4].uri=http://localhost:8761
+spring.cloud.gateway.routes[4].predicates[0]=Path=/eureka/**
 ```
 
 Up the project and now, you can try some call from postma, example
