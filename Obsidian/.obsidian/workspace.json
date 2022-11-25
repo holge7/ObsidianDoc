@@ -13,13 +13,74 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Spring/Microservices/Api Gateway 🚪.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0245d80a5d29bf43",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Spring/Testing/Unit Testing ✔.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a45bc96ab58c7b6c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PLANTILLA.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "63bffc1c34fa7751",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Spring/Auth 🔒.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "ecb45640ede75f51",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PLANTILLA.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3375da4fd48ba36f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Spring/Microservices/Auth in microservice architecture 🔐.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -136,17 +197,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "9d97df48f5757fd2",
+  "active": "63bffc1c34fa7751",
   "lastOpenFiles": [
-    "media/Captura.jpg",
+    "Spring/Microservices/Auth in microservice architecture 🔐.md",
+    "PLANTILLA.md",
+    "Untitled.md",
     "Spring/Auth 🔒.md",
-    "Spring/Test Container 🧊.md",
-    "Spring/Api Gateway 🚪.md",
-    "Spring/Exception Handler 📢.md",
     "Sync and Async Communication 📡.md",
-    "Spring/Model Mapper 📋.md",
-    "Spring/Service Discovery 🔍.md",
-    "Spring/Inter Service Communication 🖇.md",
-    "media/Pasted image 20221104223043.png"
+    "Maven multimodule project Eclipse.md",
+    "media/Captura.jpg",
+    "media/Captura2.jpg",
+    "media/Pasted image 20221030201827.png",
+    "media/Pasted image 20221031194752.png"
   ]
 }

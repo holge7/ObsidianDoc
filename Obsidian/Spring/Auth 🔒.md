@@ -34,7 +34,7 @@ public class ApiAuthApplication {
 
 Para usar todas las funciones de spring security, debemos definir sus dependencias en el .pom
 
-```java
+```xml
 <dependency>
 	<groupId>org.springframework.boot</groupId>
 	<artifactId>spring-boot-starter-security</artifactId>
@@ -43,6 +43,12 @@ Para usar todas las funciones de spring security, debemos definir sus dependenci
 	<groupId>org.springframework.security</groupId>
 	<artifactId>spring-security-test</artifactId>
 	<scope>test</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt -->
+<dependency>
+	<groupId>io.jsonwebtoken</groupId>
+	<artifactId>jjwt</artifactId>
+	<version>0.9.1</version>
 </dependency>
 ```
 

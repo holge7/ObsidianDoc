@@ -22,7 +22,7 @@ The firts step is create a new module project for it and add the dependencies fo
 ```
 
 Enable EurekaClient
-```
+```java
 @SpringBootApplication
 @EnableEurekaClient
 public class ApiGatewayApplication {
