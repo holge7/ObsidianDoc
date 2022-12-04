@@ -33,32 +33,57 @@ The firts step in implementing a Discovery Server (DS) is to create a new module
 
 Add in pom of discovery-server
 
-```
-<dependency>
-	<groupId>org.springframework.cloud</groupId>
-	<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-	<version>3.1.4</version>
-</dependency>
+```xml
+<properties>
+	<spring-cloud.version>2021.0.5</spring-cloud.version>
+</properties>
+
+<dependencies>
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-web</artifactId>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework.cloud</groupId>
+		<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+	</dependency>
+</dependencies>
+
+<dependencyManagement>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-dependencies</artifactId>
+			<version>${spring-cloud.version}</version>
+			<type>pom</type>
+			<scope>import</scope>
+		</dependency>
+	</dependencies>
+</dependencyManagement>
+
+<repositories>
+	<repository>
+		<id>netflix-candidates</id>
+		<name>Netflix Candidates</name>
+		<url>https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates</url>
+		<snapshots>
+			<enabled>false</enabled>
+		</snapshots>
+	</repository>
+	<repository>
+		<id>spring-milestones</id>
+		<name>Spring Milestones</name>
+		<url>https://repo.spring.io/milestone</url>
+		<snapshots>
+			<enabled>false</enabled>
+		</snapshots>
+	</repository>
+</repositories>
 ```
 
-And in the pom of parent project
-
-```
-    <dependencyManagement>
-	    <dependencies>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-	    </dependencies>
-	</dependencyManagement>
-```
 
 After it, we can go to DiscoveryServerAplication.java and add `@EnableEurekaServer`
-```
+```java
 @SpringBootApplication
 @EnableEurekaServer
 public class DicoveryServerApplication {
@@ -73,10 +98,14 @@ public class DicoveryServerApplication {
 
 For other hand, we need add a couple of properties in .properties of discovery-server
 ```
+# General
+spring.application.name=eureka-server
+server.port=8761
+
+# Eureka
 eureka.instance.hostname=localhost
 eureka.client.register-with-eureka=false
 eureka.client.fetch-registry=false
-server.port=8761
 ```
 
 We set 
@@ -86,22 +115,67 @@ We set
 Next step is defing eureka client in each service
 
 1. Add eureka-client dependency 
-```
+```xml
+<properties>
+	<spring-cloud.version>2021.0.5</spring-cloud.version>
+</properties>
+
 <dependency>
 	<groupId>org.springframework.cloud</groupId>
 	<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 </dependency>
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-webflux</artifactId>
+</dependency>
+
+<dependencyManagement>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-dependencies</artifactId>
+			<version>${spring-cloud.version}</version>
+			<type>pom</type>
+			<scope>import</scope>
+		</dependency>
+	</dependencies>
+</dependencyManagement>
+
+<repositories>
+	<repository>
+		<id>netflix-candidates</id>
+		<name>Netflix Candidates</name>
+		<url>https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates</url>
+		<snapshots>
+			<enabled>false</enabled>
+		</snapshots>
+	</repository>
+	<repository>
+		<id>spring-milestones</id>
+		<name>Spring Milestones</name>
+		<url>https://repo.spring.io/milestone</url>
+		<snapshots>
+			<enabled>false</enabled>
+		</snapshots>
+	</repository>
+</repositories>
 ```
 
 2. Add `@EnableEurekaClient`
-```
+``` java
 @SpringBootApplication
-@EnableEurekaClient
+@EnableDiscoveryClient
 public class OrderServiceApplication {
 ```
 
 3. Add eureka default zone (.properties)
-`eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka`
+```
+spring.application.name=auth-service
+server.port=0
+
+# Eureka
+eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka
+```
 To the client could find eureka server
 
 4.  Now we can restart all owns services (but firts we need start DS)

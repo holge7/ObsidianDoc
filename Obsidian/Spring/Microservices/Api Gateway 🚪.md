@@ -9,7 +9,7 @@ To do own implimentation of this API Gateway we will need to use Spring Cloud Ga
 "This project provides a library for building an API Gateway on top of Spring WebFlux. Spring Cloud Gateway aims to provide a simple, yet effective way to route to APIs and provide cross cutting concerns to them such as: security, monitoring/metrics, and resiliency"
 
 The firts step is create a new module project for it and add the dependencies for gateway and eureka-client (this last if we are working with it) in pom file:
-```
+```xml
 <dependency>
 	<groupId>org.springframework.cloud</groupId>
 	<artifactId>spring-cloud-starter-gateway</artifactId>
@@ -24,7 +24,7 @@ The firts step is create a new module project for it and add the dependencies fo
 Enable EurekaClient
 ```java
 @SpringBootApplication
-@EnableEurekaClient
+@EnableDiscoveryClient
 public class ApiGatewayApplication {
 
 	public static void main(String[] args) {
@@ -40,8 +40,8 @@ eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka
 spring.application.name=api-gateway
 
 logging.level.root=INFO
-logging.level.org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator= INFO
-logging.level.org.springframework.cloud.gateway= TRACE
+logging.level.org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator=INFO
+logging.level.org.springframework.cloud.gateway=TRACE
 ```
 
 Now, we want defind routes in .properties

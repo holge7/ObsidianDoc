@@ -49,38 +49,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/Auth 🔒.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ecb45640ede75f51",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PLANTILLA.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3375da4fd48ba36f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "Spring/Microservices/Auth in microservice architecture 🔐.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "733e33df949153e0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Spring/Auth 🔒.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -195,19 +183,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 318.5
   },
-  "active": "63bffc1c34fa7751",
+  "active": "733e33df949153e0",
   "lastOpenFiles": [
+    "Spring/Exception Handler 📢.md",
     "Spring/Microservices/Auth in microservice architecture 🔐.md",
-    "PLANTILLA.md",
-    "Untitled.md",
+    "Spring/Microservices/Service Discovery 🔍.md",
+    "Spring/Microservices/Api Gateway 🚪.md",
     "Spring/Auth 🔒.md",
-    "Sync and Async Communication 📡.md",
-    "Maven multimodule project Eclipse.md",
-    "media/Captura.jpg",
-    "media/Captura2.jpg",
-    "media/Pasted image 20221030201827.png",
-    "media/Pasted image 20221031194752.png"
+    "Spring/Microservices/Inter Service Communication 🖇.md",
+    "media/Pasted image 20221101170948.png",
+    "media/aut-microservice-gateway-jwt.svg",
+    "PLANTILLA.md",
+    "Untitled.md"
   ]
 }

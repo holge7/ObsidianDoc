@@ -10,10 +10,30 @@ El esquema cuenta de 3 microservicios:
 - Resource: api con recursos privados y publicos a los que queremos acceder.
 
 ## Prerequisitos
+- Auth service
+- Discovery service
+- Gateway
+- Some service with resources
 
 ## Tecnologias
 #JWT #Auth-service #gateway
 
 ## Instalacion
+
+Necesitaremos tener en nuestro pom del gatwey:
+
+```xml
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-security</artifactId>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt -->
+<dependency>
+	<groupId>io.jsonwebtoken</groupId>
+	<artifactId>jjwt</artifactId>
+	<version>0.9.1</version>
+</dependency>
+```
+
 
 ## Coding

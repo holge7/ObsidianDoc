@@ -50,6 +50,19 @@ Para usar todas las funciones de spring security, debemos definir sus dependenci
 	<artifactId>jjwt</artifactId>
 	<version>0.9.1</version>
 </dependency>
+
+(Para spring boot 3.0.0 que pasa de javax persistence a jakarta persistence)
+<!-- https://mvnrepository.com/artifact/com.sun.xml.bind/jaxb-impl -->
+<dependency>
+	<groupId>com.sun.xml.bind</groupId>
+	<artifactId>jaxb-impl</artifactId>
+</dependency>
+<!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
+<dependency>
+	<groupId>javax.xml.bind</groupId>
+	<artifactId>jaxb-api</artifactId>
+	<version>2.3.1</version>
+</dependency>
 ```
 
 
@@ -105,6 +118,7 @@ public class LoginRequest {
 	
 	public String username;
 	public String password;
+	public String email;
 	
 	...
 }
