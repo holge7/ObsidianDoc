@@ -1,0 +1,1 @@
+ La programación reactiva es un paradigma de programación con flujo de datos de forma asincronia, eliminando la sincronia y bloqueos dandonos la posibilidad de aprovechar toda nuestra CPU que antes no podiamos por el I/0, sobreuso de memoria (grandes thread pools) y ineficiencia de interacciones bloqueantes
