@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "71ba7fc3454884f0",
+        "id": "8e8aae46425e9f70",
         "type": "tabs",
         "children": [
           {
-            "id": "7e1c915c8f90476b",
+            "id": "ffbc04e6b0d88785",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/Auth 🔒.md",
+                "file": "Crear libreria y desplegarla en proyectos.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,10 +48,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#subscribe",
-                "matchingCase": false,
+                "query": "",
+                "matchingCase": true,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring/Auth 🔒.md",
+                "file": "Crear libreria y desplegarla en proyectos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring/Auth 🔒.md",
+                "file": "Crear libreria y desplegarla en proyectos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring/Auth 🔒.md"
+                "file": "Crear libreria y desplegarla en proyectos.md"
               }
             }
           }
@@ -147,17 +147,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7e1c915c8f90476b",
+  "active": "ffbc04e6b0d88785",
   "lastOpenFiles": [
-    "Spring/Testing/Unit Testing ✔.md",
-    "Spring/Testing/Cucumber 🥒.md",
-    "Spring/Testing/Test Container 🧊.md",
-    "Spring/Microservices/Service Discovery 🔍.md",
-    "Spring/Microservices/Api Gateway 🚪.md",
-    "Spring/Kafka.md",
-    "Spring/Microservices/Auth in microservice architecture 🔐.md",
-    "Spring/Microservices/Inter Service Communication 🖇.md",
-    "Spring/RestTemplate.md",
-    "PLANTILLA.md"
+    "Spring/Zipkin 🏹.md",
+    "PLANTILLA.md",
+    "Spring/Resilience4j.md",
+    "Spring/Microservices/Circuit breaker 🔌.md",
+    "Spring/Exception Handler 📢.md",
+    "Data bases/Mongo DB 🍃.md",
+    "Maven multimodule project Eclipse.md",
+    "media/Sin título 1.png",
+    "media/mongodb.svg",
+    "Reactive Programming 🦹‍♂️.md"
   ]
 }

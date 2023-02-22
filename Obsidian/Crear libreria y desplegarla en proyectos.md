@@ -18,3 +18,5 @@ Y por ultimo aniadir la dependencia al pom:
 		    <artifactId>commons</artifactId>
 		    <version>1.0.1</version>
 		</dependency>
+
+Admás dentro de cada proyecto, deberemos añadir @ComponentScan({"commons.*"}) en un @Configuration 
